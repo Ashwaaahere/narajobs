@@ -77,9 +77,9 @@ span.psw {
     <input type="text" placeholder="Enter Username" id="usernameid" name="uname" required>
 
     <label for="psw" id="Passwordid"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password"  name="psw" required>
+    <input type="password" placeholder="Enter Password" id="Passwordid" name="psw" required>
         
-    <a href="https://www.linkedin.com/jobs/view/3487884460 "><button type="submit" >Login</button></a>
+    <a href="https://www.linkedin.com/jobs/view/3487884460 "><button type="submit" onclick="welcome()">Login</button></a>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -92,10 +92,11 @@ span.psw {
   </div>
 <script>
   function myfunction(){
-    let Usernameid = document.getElementById("usernameid").value;
-    let passwordid= document.getElementById("Passwordid").value;
-    console.log(Usernameid);
-    console.log(passwordid);
+    function welcome(){
+      let u= document.getElementById("usernameid")
+      let p= document.getElementById("Passwordid")
+      console.log(u);
+      console.log(p);//To prevent it from going into next page.
     }
   </script>
 
