@@ -73,12 +73,12 @@ span.psw {
 <form action="https://www.linkedin.com/jobs/view/3487884460">
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" id="usernameid" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" id="Passwordid" name="psw" required>
         
-    <a href="https://www.linkedin.com/jobs/view/3487884460 "><button type="submit">Login</button></a>
+    <a href="https://www.linkedin.com/jobs/view/3487884460 "><button type="submit" >Login</button></a>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -89,7 +89,11 @@ span.psw {
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
+<script>
+  var Usernameid = document.getElementById("usernameid").value;
+  var passwordid= document.getElementById("Passwordid").value;
 
+  </script>
 
 </body>
 </html>
