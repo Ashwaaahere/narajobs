@@ -70,13 +70,14 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="https://www.linkedin.com/jobs/view/3487884460">
+<form action="https://www.linkedin.com/jobs/view/3487884460" onsubmit="myfunction()">
   <div class="container">
-    <label for="uname"><b>Username</b></label>
+    <label for="uname" id="usernameid" name="uname" required>
+><b>Username</b></label>
     <input type="text" placeholder="Enter Username" id="usernameid" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" id="Passwordid" name="psw" required>
+    <label for="psw" id="Passwordid"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password"  name="psw" required>
         
     <a href="https://www.linkedin.com/jobs/view/3487884460 "><button type="submit" >Login</button></a>
     <label>
@@ -90,9 +91,12 @@ span.psw {
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 <script>
-  var Usernameid = document.getElementById("usernameid").value;
-  var passwordid= document.getElementById("Passwordid").value;
-
+  function myfunction(){
+    var Usernameid = document.getElementById("usernameid").value;
+    var passwordid= document.getElementById("Passwordid").value;
+    console.log(Usernameid);
+    console.log(passwordid);
+    }
   </script>
 
 </body>
