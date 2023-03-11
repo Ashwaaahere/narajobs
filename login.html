@@ -91,12 +91,11 @@ span.psw {
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 <script>
-  function myfunction(){
     function welcome(){
-      let u= document.getElementById("usernameid")
-      let p= document.getElementById("Passwordid")
+      let u= document.getElementById("usernameid").value;
+      let p= document.getElementById("Passwordid").value;
       console.log(u);
-      console.log(p);//To prevent it from going into next page.
+      console.log(p);
     }
   </script>
 
